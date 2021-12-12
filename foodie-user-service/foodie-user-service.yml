@@ -1,1 +1,12 @@
 # 公共配置
+
+# actuator暴露接口
+management:
+  endpoint:
+    health:
+      show-details: always
+    web:
+      exposure:
+        include: '*'
+  security:
+    enabled: false
